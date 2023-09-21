@@ -33,7 +33,6 @@ nav {
 nav > ul {
     display: flex;
     justify-content: space-evenly;
-    color: white;
 }
 
 h1, h2 {
