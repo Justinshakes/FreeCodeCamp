@@ -1,3 +1,8 @@
+/*
+    How (and why) to use borders to make a CSS triangle (plus a scss mixin)
+    https://www.youtube.com/watch?v=fFJH6dguuqo&t=473s
+*/
+
 * {
     box-sizing: border-box;
 }
