@@ -2,6 +2,8 @@ body {
     background-color: #484851;
     color: #d0d0d5;
     font-family: Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #title_div {
@@ -12,7 +14,10 @@ body {
 #img-div {
     background-color: #18181b;
     padding: 20px 10px 10px 10px;
-    margin-bottom: 35px;
+    border: solid 2px grey;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
 }
 
 #img-caption{
@@ -22,8 +27,7 @@ body {
 img {
     display: block;
     margin: auto;
-    border: solid 2px grey;
-    max-width: 100%;
+    max-width: 600px;
 }
 
 #tribute-info {

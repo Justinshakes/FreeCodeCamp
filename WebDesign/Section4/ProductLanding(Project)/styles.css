@@ -1,36 +1,42 @@
-
+/* Reset default margin, padding, and box-sizing behavior for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global styles for the body */
 body {
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
 
+/* Page wrapper */
 #page-wrapper {
     position: relative;
 }
 
+/* Remove bullet points from list items */
 li {
     list-style: none;
 }
 
+/* Remove underlines from links */
 a {
     color: #000;
     text-decoration: none;
 }
 
-/** global classes styling **/
+/* Global classes styling */
 
+/* Container styles */
 .container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Button styles */
 .btn {
     padding: 0 20px;
     height: 40px;
@@ -43,10 +49,12 @@ a {
     cursor: pointer;
 }
 
+/* Grid styles */
 .grid {
     display: flex;
 }
 
+/* Header section styles */
 header {
     position: fixed;
     top: 0;
@@ -58,16 +66,19 @@ header {
     background-color: #eee;
 }
 
-@media (max-width: 600px) {
+/* Responsive header styles */
+@media (max-width: 650px) {
     header {
         flex-wrap: wrap;
     }
 }
 
+/* Logo styles */
 .logo {
     width: 60vw;
 }
 
+/* Responsive logo styles for smaller screens */
 @media (max-width: 650px) {
     .logo {
         margin-top: 15px;
@@ -76,6 +87,7 @@ header {
     }
 }
 
+/* Logo image styles */
 .logo > img {
     width: 100%;
     height: 100%;
@@ -87,16 +99,19 @@ header {
     margin-left: 20px;
 }
 
+/* Responsive logo image styles for smaller screens */
 @media (max-width: 650px) {
     .logo > img {
         margin: 0 auto;
     }
 }
 
+/* Navigation styles */
 nav {
     font-weight: 400;
 }
 
+/* Responsive navigation styles */
 @media (max-width: 650px) {
     nav {
         margin-top: 10px;
@@ -112,6 +127,7 @@ nav {
     }
 }
 
+/* Navigation list styles */
 nav > ul {
     width: 35vw;
     display: flex;
@@ -119,12 +135,14 @@ nav > ul {
     justify-content: space-around;
 }
 
+/* Responsive navigation list styles for smaller screens */
 @media (max-width: 650px) {
     nav > ul {
         flex-direction: column;
     }
 }
 
+/* Hero section styles */
 #hero {
     display: flex;
     flex-direction: column;
@@ -135,17 +153,20 @@ nav > ul {
     margin-top: 50px;
 }
 
+/* Hero title styles */
 #hero > h2 {
     margin-top: auto;
     margin-bottom: 20px;
 }
 
+/* Input field styles within the hero section */
 #hero input[type='email'] {
     max-width: 275px;
     width: 100%;
     padding: 5px;
 }
 
+/* Submit button styles within the hero section */
 #hero input[type='submit'] {
     max-width: 150px;
     width: 100%;
@@ -155,21 +176,24 @@ nav > ul {
     background-color: #f1c40f;
 }
 
+/* Hover effect for the submit button */
 #hero input[type='submit']:hover {
     background-color: orange;
 }
 
-
+/* Responsive hero styles for smaller screens */
 @media (max-width: 650px) {
     #hero {
-        margin-top: 120px;
+        margin-top: 180px;
     }
 }
 
+/* Features section styles */
 #features {
     margin-top: 30px;
 }
 
+/* Icon styles within the features section */
 #features .icon {
     display: flex;
     align-items: center;
@@ -179,12 +203,14 @@ nav > ul {
     color: darkorange;
 }
 
+/* Hide icons on smaller screens */
 @media (max-width: 550px) {
     #features .icon {
-        display: none;
+        position: static;
     }
 }
 
+/* Description styles within the features section */
 #features .desc {
     display: flex;
     flex-direction: column;
@@ -194,6 +220,7 @@ nav > ul {
     padding: 5px;
 }
 
+/* Responsive description styles for smaller screens */
 @media (max-width: 550px) {
     #features .desc {
         width: 100%;
@@ -203,41 +230,49 @@ nav > ul {
     }
 }
 
+/* Remove margin-top for features section on smaller screens */
 @media (max-width: 650px) {
     #features {
         margin-top: 0;
     }
 }
 
-#how-it-works {
+/* How It Works section styles */
+#jams, #how-it-works {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-#how-it-works > iframe {
-    max-width: 560px;
+#jams > iframe {
+    max-width: 1200px;
     width: 100%;
 }
 
+/* Pricing section styles */
 #pricing {
     margin-top: 60px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+/* Product styles within the pricing section */
 .product {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(100% / 3);
+    width: 33%;
     margin: 10px;
     border: 1px solid #000;
     border-radius: 3px;
 }
 
+/* Level styles within the product */
 .product > .level {
     background-color: #ddd;
     color: black;
@@ -247,18 +282,22 @@ nav > ul {
     font-weight: 700;
 }
 
+/* Title styles within the product */
 .product > h2 {
     margin-top: 15px;
 }
 
+/* List styles within the product */
 .product > ol {
     margin: 15px 0;
 }
 
+/* List item styles within the product */
 .product > ol > li {
     padding: 5px 0;
 }
 
+/* Button styles within the product */
 .product > button {
     border: 0;
     margin: 15px 0;
@@ -266,11 +305,12 @@ nav > ul {
     font-weight: 400;
 }
 
+/* Hover effect for product buttons */
 .product > button:hover {
     background-color: orange;
-    transition: background-color 1s;
 }
 
+/* Responsive pricing styles for smaller screens */
 @media (max-width: 800px) {
     #pricing {
         flex-direction: column;
@@ -278,30 +318,40 @@ nav > ul {
     .product {
         max-width: 300px;
         width: 100%;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        margin: 0 auto 10px;
     }
 }
 
+/* Footer section styles */
 footer {
     margin-top: 30px;
     background-color: #ddd;
     padding: 20px;
 }
 
+/* List styles within the footer */
 footer > ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
+/* List item styles within the footer */
 footer > ul > li {
     padding: 0 10px;
 }
 
+/* Copyright text styles within the footer */
 footer > span {
     margin-top: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 0.9em;
     color: #444;
+}
+
+/* Styling for the "jam-hero" image */
+#jam-hero {
+    max-width: 660px;
+    width: 100%;
+    border: 5px solid grey;
 }

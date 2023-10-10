@@ -209,13 +209,13 @@ nav > ul {
     }
 }
 
-#how-it-works {
+#jams {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-#how-it-works > iframe {
+#jams > iframe {
     max-width: 560px;
     width: 100%;
 }
