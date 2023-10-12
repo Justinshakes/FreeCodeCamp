@@ -11,6 +11,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+
+
 /* Page wrapper */
 #page-wrapper {
     position: relative;
@@ -64,6 +66,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #eee;
+
 }
 
 /* Responsive header styles */
@@ -114,6 +117,7 @@ nav {
 /* Responsive navigation styles */
 @media (max-width: 650px) {
     nav {
+        border-bottom: 1px solid grey;
         margin-top: 10px;
         width: 100%;
         display: flex;
