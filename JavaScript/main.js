@@ -1,6 +1,3 @@
-var myFirstName = "Justin";
+const difference = 45 - 33;
 
-var myLastName = "Sherrell";
-
-
-console.log(myFirstName + " " + myLastName);
+console.log(difference);
