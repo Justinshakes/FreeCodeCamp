@@ -1,3 +1,2 @@
-const difference = 45 - 33;
+product = 2.0 * 0.0;
 
-console.log(difference);
