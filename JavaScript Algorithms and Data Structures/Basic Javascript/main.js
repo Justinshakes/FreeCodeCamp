@@ -9,3 +9,6 @@ console.log(myStr);
 
 // Wow I love learning
 // very cool
+
+
+console.log("Pog");
