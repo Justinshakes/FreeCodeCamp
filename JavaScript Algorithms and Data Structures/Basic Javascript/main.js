@@ -10,6 +10,7 @@ console.log(myStr);
 // Wow I love learning
 // invest
 // very cool
+// gotta figure out a plan
 
 
 console.log("Pog");
