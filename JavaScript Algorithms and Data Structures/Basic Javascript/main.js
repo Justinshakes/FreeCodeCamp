@@ -13,6 +13,8 @@ console.log(myStr);
 // gotta figure out a plan
 // hmm
 // more
+// thinking
 
 console.log("Pog");
+
 
