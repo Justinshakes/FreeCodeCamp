@@ -15,18 +15,21 @@ body {
 
 form {
     width: 60vw;
-    background-color: #990011;
+    background-color: #FFA351;
     margin: 0 auto;
+    padding: 1em;
+    font-size: 1.25em
 }
 
 label, input {
-    margin: .5em auto;
+    margin: .5em 0;
     display: block;
 }
 
-input, textarea {
-    background-color: #FCF6F5;
-    border: 1px solid #FCF6F5;
-    color: #020001;
+input {
+    background-color: #FFBE7B;
+    border: 1px solid #FFBE7B;
+    color: #783937;
     font-size: 1.5em;
+    border-radius: .25em;
 }
