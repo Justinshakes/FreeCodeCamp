@@ -14,7 +14,7 @@ body {
 }
 
 form {
-    width: 60vw;
+    width: 60%;
     background-color: #FFA351;
     margin: 0 auto;
     padding: 1em;
@@ -26,10 +26,21 @@ label, input {
     display: block;
 }
 
-input {
+input, select {
     background-color: #FFBE7B;
     border: 1px solid #FFBE7B;
     color: #783937;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: .25em;
+    width: 90%;
+    margin-right: auto;
+    padding: 8px;
 }
+
+.inline {
+    width: unset;
+    display: inline;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
