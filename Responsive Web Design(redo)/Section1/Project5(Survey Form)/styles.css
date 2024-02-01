@@ -18,7 +18,9 @@ form {
     background-color: #FFA351;
     margin: 0 auto;
     padding: 1em;
-    font-size: 1.25em
+    font-size: 1.25em;
+    border: 5px solid #FFA351;
+    border-radius: 10px;
 }
 
 label, input {
@@ -43,4 +45,16 @@ input, select {
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
+
+.checkbox,
+.radio {
+    transform: scale(1.5);
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+
+
 
