@@ -10,10 +10,9 @@
 <p id="description">Thank you for checking out Programming Tutor.</p>
 
 <form id="survey-form">
-    <label for="name-label">Enter Your Name: <input placeholder="John doe" id="name-label" type="text"></label>
-    <label for="email-label">Enter Your Email: <input placeholder="John doe@gmail.com" id="email-label" type="email"></label>
-    <label placeholder="1" for="number-label">Tutoring hours: <input id=
-                                                                             "number-label" type="number" min="1" max="8"></label>
+    <label id="name-label">Enter Your Name: <input required placeholder="John doe" id="name" type="text"></label>
+    <label id="email-label">Enter Your Email: <input required placeholder="John doe@gmail.com" id="email" type="email"></label>
+    <label id="number-label">Tutoring hours: <input id="number" placeholder="1" required type="number" min="1" max="8"></label>
     <label>Select Programming Language:
         <select id="dropdown">
             <option value="">(select one)</option>
@@ -21,10 +20,28 @@
             <option value="javascript">JavaScript</option>
             <option value="python">Python</option>
         </select>
+
+
+        <p>Account type (required)</p>
+        <label for="Online">
+            <input id="Online" value="online" type="radio" name="Online_In_person" class="inline" checked/> Online
+        </label>
+        <label for="In-Person">
+            <input id="In-Person" value="in_person" type="radio" name="Online_In_person" class="inline"/> In-Person
+        </label>
+
+        <p>Please Check The Following</p>
+        <label for="motivated">Motivated <input class="inline" value="motivated" type="checkbox" id="motivated"></label>
+        <label for="Friendly">Friendly <input value="friendly" class="inline" type="checkbox" id="Friendly"></label>
+        <label for="18">Over 18 <input class="inline" value="over_18" type="checkbox" id="18"></label>
+
+        <label for="extra">
+           <p>Extra Comments: </p>
+            <textarea placeholder="I love to code in my pyjamas" rows="5" cols="30" id="extra"></textarea>
+        </label>
+
+        <input type="submit" id="submit" value="Submit"/>
 </form>
-<p>Account type (required)</p>
-<label for="personal-account"><input id="Online" type="radio" name="Online_In_person" class="inline" checked /> Online</label>
-<label for="business-account"><input id="In-Person" type="radio" name="Online_In_person" class="inline" /> In-Person</label>
 
 
 </body>

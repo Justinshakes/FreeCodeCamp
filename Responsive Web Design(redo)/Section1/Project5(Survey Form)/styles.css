@@ -10,7 +10,7 @@ body {
 
 #title, #description {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 form {
@@ -30,9 +30,9 @@ input, select {
     background-color: #FFBE7B;
     border: 1px solid #FFBE7B;
     color: #783937;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: .25em;
-    width: 90%;
+    width: 80%;
     margin-right: auto;
     padding: 8px;
 }
