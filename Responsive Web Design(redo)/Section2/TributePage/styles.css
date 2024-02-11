@@ -1,0 +1,24 @@
+#image {
+    display: block;
+    max-width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 5px solid dodgerblue;
+    border-radius: 20px;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg? cs=srgb&dl=pexels-mudassir-ali-2680270.jpg&fm=jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #bde0fe;
+}
+
+#title {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+}
