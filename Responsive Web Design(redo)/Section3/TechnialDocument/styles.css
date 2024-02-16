@@ -6,7 +6,7 @@
 
 html {
     font-family: sans-serif;
-    color: darkgray;
+    color: darkslategray;
 }
 
 nav a {
@@ -14,7 +14,7 @@ nav a {
     margin-top: 10px;
     border-top: #1f1f1f 1px solid;
     text-decoration: none;
-    color: grey;
+    color: darkslategray;
     font-weight: bold;
     padding: 20px 10px 10px 20px;
     width: 100%;
@@ -28,10 +28,23 @@ nav {
 }
 
 nav header {
-    font-size: 1.5em;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 
 main {
+    padding-top: 10px;
     width: 60%;
     margin-left: 32%;
+}
+
+section > header, section > p {
+    margin-bottom: 10px;
+}
+
+section > header {
+    font-weight: bold;
+    font-size: 1.25em;
 }
