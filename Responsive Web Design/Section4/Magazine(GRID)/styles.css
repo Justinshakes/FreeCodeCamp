@@ -170,7 +170,10 @@ hr {
         font-size: 6rem;
     }
 
-    .hero-subtitle, .author, .quote, .list-title {
+    .hero-subtitle,
+    .author,
+    .quote,
+    .list-title {
         font-size: 1.8rem;
     }
 
