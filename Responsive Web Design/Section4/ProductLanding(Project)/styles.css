@@ -2,7 +2,74 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    min-width: 500px;
+}
+
 html {
     font-size: 62.5%;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+#header-img {
+    width: 25%;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+nav ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #1f1f1f;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+
+nav ul li a:hover {
+    background-color: lightcoral;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #header-img {
+        display: inline-block;
+        margin: -50px auto;
+        width: 200px;
+        max-width: unset;
+    }
+
+    nav ul li a {
+        padding:  10px;
+    }
+}
+
+
 
