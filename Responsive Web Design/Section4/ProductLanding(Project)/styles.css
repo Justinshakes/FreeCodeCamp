@@ -69,14 +69,53 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        padding:  10px;
+        padding: 10px;
     }
 }
 
-#perks h1 {
-    font-size: 4rem;
+h1 {
+    font-size: 2rem;
     text-align: center;
 }
+
+form {
+    text-align: center;
+}
+
+#email {
+    padding: 3px 10px 3px 5px;
+    font-size: 1.5rem;
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+}
+
+#submit {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: lightblue;
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+    cursor: pointer;
+    color: dodgerblue;
+
+}
+
+#submit:hover {
+    color: forestgreen;
+    background-color: lightgreen;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+
+
+
 
 
 
