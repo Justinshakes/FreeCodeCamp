@@ -9,6 +9,7 @@ body {
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 nav {
@@ -72,7 +73,8 @@ nav ul li a:hover {
     }
 }
 
-h2 {
+#perks h1 {
+    font-size: 4rem;
     text-align: center;
 }
 
