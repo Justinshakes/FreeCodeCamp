@@ -11,54 +11,82 @@
 <header id="header">
     <nav id="nav-bar">
         <img id="header-img" alt="amazing logo"
-             src="https://i.imgur.com/wqCJdLn.png">
+             src="https://i.imgur.com/0tGEyoH.png">
         <ul>
             <li><a class="nav-link" href="#perks">Perks</a></li>
-            <li><a class="nav-link" href="#about-us">About Us</a></li>
+            <li><a class="nav-link" href="#about">How It Works</a></li>
             <li><a class="nav-link" href="#pricing">Pricing</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="form">
-    <h1>Nothing Faster Than Amazing</h1>
-    <form action="">
+<section id="form-section">
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <h1>Nothing Faster Than Amazing</h1>
         <label for="email">
-            <input placeholder="something@gmail.com" id="email" type="email" required >
+            <input name="email" placeholder="something@gmail.com" id="email" type="email" required>
         </label>
         <label for="submit">
-            <input id="submit" type="submit" >
+            <input id="submit" type="submit">
         </label>
     </form>
 </section>
+
+<br><br><br><br><br><br><br><br>
 
 <section id="perks">
     <h1>Perks With Amazing</h1>
 
     <div>
-        <img src=""> <p>Picture with truck (Fast Shipping)</p>
+        <img src="https://i.imgur.com/8Bs2dRM.png" alt="Picture of delivery truck">
+        <p>Picture with truck (Fast Shipping)</p>
     </div>
 
     <div>
-        <img src=""><p>Picture with package (Safe handling)</p>
+        <img src="https://i.imgur.com/kCpNX5X.jpeg" alt="Picture with shipping box">
+        <p>Picture with package (Safe handling)</p>
     </div>
 
     <div>
-        <img src=""><p>Picture with Thumbs up (Top Rated)</p>
+        <img src="https://i.imgur.com/BTBftRu.jpeg" alt="Picture with 5 stars and a checkmark">
+        <p>Picture with Thumbs up (Top Rated)</p>
     </div>
 </section>
 
-<section id="about-us">
+<br><br><br><br><br><br><br><br>
+
+<section id="about">
     <hr>
+    <h1>How It Works</h1>
+    <div class="video-container">
+        <iframe id="video"
+                src="https://www.youtube.com/embed/2qanMpnYsjk"
+                title="How Amazon&#39;s Super-Complex Shipping System Works"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
 </section>
+
+<br><br><br><br><br><br><br><br>
 
 <section id="pricing">
     <hr>
+    <h1>Pricing</h1>
+
+    <div class="grid-container">
+        <div class="price1"></div>
+        <div class="price2"></div>
+        <div class="price3"></div>
+    </div>
 </section>
+
+<br><br><br><br><br><br><br><br>
+
 
 <footer id="contact">
     <hr>
+    <h1>Contact</h1>
 </footer>
 
 

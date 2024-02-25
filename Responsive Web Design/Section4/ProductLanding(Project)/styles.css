@@ -4,19 +4,34 @@
 
 body {
     margin: 0;
-    min-width: 500px;
+    min-width: 550px;
+    padding-top: 155px; /* Add padding to account for the fixed nav bar */
 }
 
 html {
     font-size: 62.5%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav {
     display: flex;
-    align-items: center;
+    top: 0;
+    position: fixed;
     width: 100%;
-    height: 100px;
+    height: 125px;
+    z-index: 1000;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid grey 3px;
+}
+
+#form-section,
+#about,
+#pricing,
+#contact {
+    padding-top: 155px; /* Adjust this value to match the height of your navigation bar */
 }
 
 #header-img {
@@ -36,30 +51,42 @@ nav ul {
     text-align: center;
 }
 
-nav ul li {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-nav ul li a {
+.nav-link {
     color: #1f1f1f;
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
-    border-radius: 50px;
+    border-radius: 60px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     background-color: lightcoral;
-    border-radius: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 675px) {
     nav {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         height: unset;
     }
+
+    #header-img {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+
+    .video-container #video {
+        width: 500px;
+        height: 350px
+    }
+
 
     #header-img {
         display: inline-block;
@@ -68,14 +95,18 @@ nav ul li a:hover {
         max-width: unset;
     }
 
-    nav ul li a {
-        padding: 10px;
+    .nav-link {
+        font-size: 2rem;
+        margin: 0;
     }
+
+
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3.25rem;
     text-align: center;
+
 }
 
 form {
@@ -83,11 +114,11 @@ form {
 }
 
 #email {
-    padding: 3px 10px 3px 5px;
-    font-size: 1.5rem;
+    padding: 6px 60px 6px 10px;
+    font-size: 2rem;
 }
 
-form input {
+input {
     display: block;
     margin: 10px auto;
 }
@@ -96,21 +127,78 @@ form input {
     padding: 10px;
     font-size: 2rem;
     font-weight: bold;
-    background-color: lightblue;
     border: 3px solid darkslategrey;
     border-radius: 10px;
     cursor: pointer;
-    color: dodgerblue;
-
+    color: darkslategrey;
 }
 
 #submit:hover {
-    color: forestgreen;
-    background-color: lightgreen;
+    background-color: mediumseagreen;
 }
 
-section {
-    margin-bottom: 50px;
+#how-it-works {
+    height: 400px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    height: 550px;
+    width: 800px;
+    border: none;
+}
+
+#perks {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#perks div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 2rem;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#perks img {
+    width: 125px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.grid-container div {
+    width: 300px;
+    height: 500px;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 675px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+    }
+
+    .grid-container div {
+        width: 450px;
+        height: 600px;
+        background-color: blue;
+    }
 }
 
 
