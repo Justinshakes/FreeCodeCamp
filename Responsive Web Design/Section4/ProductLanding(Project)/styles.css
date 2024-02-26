@@ -6,6 +6,7 @@ body {
     margin: 0;
     min-width: 550px;
     padding-top: 155px; /* Add padding to account for the fixed nav bar */
+
 }
 
 html {
@@ -15,13 +16,13 @@ html {
 }
 
 nav {
+    background-color: white;
     display: flex;
     top: 0;
     position: fixed;
     width: 100%;
     height: 125px;
     z-index: 1000;
-    background-color: white;
     padding-top: 10px;
     padding-bottom: 20px;
     border-bottom: solid grey 3px;
@@ -180,25 +181,53 @@ input {
     place-items: center;
 }
 
-.grid-container div {
+.grid-container > div {
     width: 300px;
     height: 500px;
-    background-color: blue;
+    border: 3px solid black;
+    text-align: center;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 900px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 40px;
         place-items: center;
     }
 
     .grid-container div {
-        width: 450px;
-        height: 600px;
-        background-color: blue;
+        width: 375px;
+        height: 500px;
     }
+
+    /*By adding .grid-container before .card-title inside the media query, you increase its specificity,
+    ensuring that it takes precedence over the general .card-title styles defined outside the media query.
+    This should solve the issue with your .card-title background color not changing at smaller screen widths.*/
+    .grid-container .card-title {
+        background-color: antiquewhite;
+        height: 100px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+.card-title {
+    background-color: antiquewhite;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.grid-container h3 {
+    font-size: 2.25rem;
+    padding-top: 15px;
+}
+
+.grid-container p {
+    font-size: 2rem;
 }
 
 
