@@ -28,7 +28,11 @@ nav {
     border-bottom: solid grey 3px;
 }
 
-#form-section,
+#form-section {
+    padding-top: 0;
+}
+
+
 #about,
 #pricing,
 #contact {
@@ -228,6 +232,25 @@ input {
 
 .grid-container p {
     font-size: 2rem;
+}
+
+.grid-container button {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+    cursor: pointer;
+    color: darkslategrey;
+}
+
+.grid-container button:hover {
+    background-color: seagreen;
+}
+
+#contact {
+    background-color: #6096BA;
 }
 
 
