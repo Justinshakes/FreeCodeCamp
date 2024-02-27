@@ -249,8 +249,13 @@ input {
     background-color: seagreen;
 }
 
-#contact {
+footer {
     background-color: #6096BA;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0; /* Add padding as needed */
+    text-align: center; /* Center content horizontally */
 }
 
 
