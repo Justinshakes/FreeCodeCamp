@@ -1,65 +1,69 @@
+/* Styles for the Ferris wheel container */
 .wheel {
-    border: 2px solid black;
-    border-radius: 50%;
-    margin-left: 50px;
-    position: absolute;
-    width: 55vw;
-    height: 55vw;
-    max-height: 500px;
-    max-width: 500px;
-    animation-name: wheel;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    border: 2px solid black; /* Border around the wheel */
+    border-radius: 50%; /* Makes it a circle */
+    margin-left: 50px; /* Adds some margin to the left */
+    position: absolute; /* Positioned absolutely for animation */
+    width: 55vw; /* Width relative to viewport width */
+    height: 55vw; /* Height relative to viewport width */
+    max-height: 500px; /* Maximum height */
+    max-width: 500px; /* Maximum width */
+    animation-name: wheel; /* Applies animation to the wheel */
+    animation-duration: 10s; /* Animation duration */
+    animation-iteration-count: infinite; /* Infinite animation loop */
+    animation-timing-function: linear; /* Linear animation */
 }
 
+/* Styles for the lines representing the spokes of the wheel */
 .line {
-    background-color: black;
-    width: 50%;
-    height: 2px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: 0% 0%;
+    background-color: black; /* Color of the lines */
+    width: 50%; /* Length of the lines */
+    height: 2px; /* Thickness of the lines */
+    position: absolute; /* Positioned absolutely for rotation */
+    left: 50%; /* Positioned at the center horizontally */
+    top: 50%; /* Positioned at the center vertically */
+    transform-origin: 0% 0%; /* Origin point for rotation */
 }
 
+/* Positioning and rotation for each line */
 .line:nth-of-type(2) {
-    transform: rotate(60deg);
+    transform: rotate(60deg); /* Rotates second line by 60 degrees */
 }
 
 .line:nth-of-type(3) {
-    transform: rotate(120deg);
+    transform: rotate(120deg); /* Rotates third line by 120 degrees */
 }
 
 .line:nth-of-type(4) {
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* Rotates fourth line by 180 degrees */
 }
 
 .line:nth-of-type(5) {
-    transform: rotate(240deg);
+    transform: rotate(240deg); /* Rotates fifth line by 240 degrees */
 }
 
 .line:nth-of-type(6) {
-    transform: rotate(300deg);
+    transform: rotate(300deg); /* Rotates sixth line by 300 degrees */
 }
 
+/* Styles for the cabins */
 .cabin {
-    background-color: red;
-    width: 20%;
-    height: 20%;
-    position: absolute;
-    border: 2px solid;
-    transform-origin: 50% 0%;
-    /*This will set the animation-name, animation-duration, animation-timing-function,
-    and animation-iteration-count properties in that order.*/
-    animation: cabins 10s ease-in-out infinite;
+    background-color: red; /* Color of the cabins */
+    width: 20%; /* Width of the cabins */
+    height: 20%; /* Height of the cabins */
+    position: absolute; /* Positioned absolutely for animation */
+    border: 2px solid; /* Border around the cabins */
+    transform-origin: 50% 0%; /* Origin point for rotation */
+    animation: cabins 10s ease-in-out infinite; /* Applies animation to the cabins */
 }
 
+/* Positioning for each cabin */
 .cabin:nth-of-type(1) {
-    right: -8.5%;
-    top: 50%;
+    right: -8.5%; /* Positioned to the right */
+    top: 50%; /* Positioned at the center vertically */
 }
 
+/* Similar positioning for other cabins */
 .cabin:nth-of-type(2) {
     right: 17%;
     top: 93.5%;
@@ -85,34 +89,36 @@
     top: 7%;
 }
 
+/* Keyframes for the wheel rotation animation */
 @keyframes wheel {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /* Initial rotation */
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg); /* Full rotation */
     }
 }
 
+/* Keyframes for the cabin color and rotation animation */
 @keyframes cabins {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /* Initial rotation */
     }
 
     25% {
-        background-color: yellow;
+        background-color: yellow; /* Change color at 25% */
     }
 
     50% {
-        background-color: purple;
+        background-color: purple; /* Change color at 50% */
     }
 
     75% {
-        background-color: yellow;
+        background-color: yellow; /* Change color at 75% */
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(-360deg); /* Full rotation in opposite direction */
     }
 }
