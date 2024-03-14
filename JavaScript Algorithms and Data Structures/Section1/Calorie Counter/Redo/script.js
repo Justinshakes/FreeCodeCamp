@@ -13,3 +13,5 @@ function cleanInputString(str) {
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
 }
+
+// Finish this 2night
