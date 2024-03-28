@@ -36,6 +36,8 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+// Step 63 click on step 63
+
 function update(location) {
     button1.innerText = "Go to store";
     button2.innerText = "Go to cave";
