@@ -24,3 +24,6 @@ function addEntry() {
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />`;
         }
+
+
+        //I guess will c
