@@ -32,6 +32,8 @@ nav {
 
 nav > ul {
     display: flex;
-    color: white;
     justify-content: space-evenly;
 }
+
+
+/*Step 17*/
