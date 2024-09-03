@@ -1,3 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 3em;
+    text-align: center;
+}
+
 body {
+    max-width: 800px;
     background-color: #6c6982;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+#img-div {
+}
+
+#image {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    border: 5px solid #3c3951;
+    border-radius: 50px;
+
 }
