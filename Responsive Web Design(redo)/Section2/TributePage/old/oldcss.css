@@ -50,7 +50,7 @@ body {
     text-align: center;
 }
 
-#tribute-info {
+#tribute-link {
     max-width: 900px;
     display: block;
     margin: 20px auto;
@@ -66,7 +66,7 @@ ul > li {
     text-shadow: 2px 2px 2px black;
 }
 
-#tribute-info > p {
+#tribute-link > p {
     margin-top: 40px;
     font-style: italic;
     font-size: .9em;
