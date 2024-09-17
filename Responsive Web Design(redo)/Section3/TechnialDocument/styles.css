@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;400;900&display=swap');
+
+header {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+main {
+    margin-left: 220px;
+}
+
+#navbar {
+    border-right: solid black 1px;
+    position: fixed;
+    height: 100%;
+}
+
+nav header {
+    padding: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 25px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #210d21;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    width: 215px;
+}
+
+section:first-of-type {
+    padding-top: 15px;
+}
+
+section {
+    padding-left: 20px;
+
+}
+
+
+
+section:not(:first-of-type) {
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
