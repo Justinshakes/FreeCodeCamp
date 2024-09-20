@@ -30,7 +30,7 @@ nav {
 #about,
 #pricing,
 #contact {
-    padding-top: 155px; /* Adjust this value to match the height of your navigation bar */
+    margin-top: 150px;
 }
 
 #header-img {
@@ -120,14 +120,10 @@ input {
     object-fit: cover;
 }
 
+/*End of Perks Section*/
+
 /* About Section */
 
-
-
-
-
-
-/*
 #how-it-works {
     height: 400px;
 }
@@ -144,9 +140,92 @@ input {
     width: 800px;
     border: none;
 }
- */
 
+/* End of About Section*/
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.grid-container > div {
+    width: 300px;
+    height: 450px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.card-title {
+    background-color: antiquewhite;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Start of Pricing Section */
+
+.grid-container h3 {
+    font-size: 2.25rem;
+}
+
+.grid-container p {
+    font-size: 2rem;
+}
+
+.grid-container button {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+    cursor: pointer;
+    color: darkslategrey;
+}
+
+.grid-container button:hover {
+    background-color: seagreen;
+}
+
+/* End of Pricing Section */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #6096BA;
+    /* Add padding as needed */
+    height: 75px;
+}
+
+footer > ul {
+    display: flex;
+
+}
+
+footer li a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+footer li a:hover {
+    color: wheat;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer p {
+    font-size: 1.15rem;
+    padding-right: 30px;
+}
 
 @media only screen and (max-width: 675px) {
     nav {
@@ -160,11 +239,32 @@ input {
         border-radius: 30px;
     }
 
-    /*
     .video-container #video {
         width: 500px;
         height: 350px
     }
-    */
 
+    #about,
+    #pricing,
+    #contact {
+        margin-top: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .grid-container div {
+        width: 375px;
+        height: 450px;
+    }
+
+    .grid-container .card-title {
+        height: 100px;
+        width: 100%;
+    }
 }
