@@ -1,3 +1,3 @@
 const calorieCounter = document.getElementById('calorie-counter');
 
-// Step 15   
+// Step 15    
