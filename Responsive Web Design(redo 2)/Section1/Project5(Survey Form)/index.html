@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Coding Form</title>
+</head>
+<body>
+<h1 id="title">Learn To Code With Justin</h1>
+<p id=description>Looking for a beginner-friendly coding learning experience</p>
+<form id="survey-form">
+
+    <fieldset>
+        <label id="name-label" for="name">Name
+            <input required placeholder="John Doe" id="name" type="text">
+        </label>
+
+        <label id="email-label" for="email">Email
+            <input required placeholder="JohnDoe@gmail.com" id="email" type="email">
+        </label>
+
+        <label id="number-label" for="number">Age
+            <input required placeholder="12-100" id="number" type="number" min="12" max="100">
+        </label>
+
+    </fieldset>
+
+
+    <fieldset id="radio-inputs">
+        <legend>What would you like to learn?</legend>
+        <label for="front-end">
+            <input value="front-end" type="radio" name="type-of-coding" id="front-end">
+            Front-End
+        </label>
+        <label for="back-end">
+            <input value="back-end" type="radio" name="type-of-coding" id="back-end">
+            Back-End
+        </label>
+        <label for="full-stack">
+            <input value="full-stack" type="radio" name="type-of-coding" id="full-stack">
+            Full-Stack
+        </label>
+    </fieldset>
+
+    <fieldset id="checkbox-inputs">
+        <legend>Topics Interested In (Check all that apply)</legend>
+        <label for="AI">
+            <input class="checkbox-input" value="AI" type="checkbox" id="AI">
+            AI
+        </label>
+
+        <label for="Block-Chain">
+            <input class="checkbox-input" value="Block-Chain" type="checkbox" id="Block-Chain">
+            Block-Chain
+        </label>
+
+        <label for="Data-Science">
+            <input class="checkbox-input" value="Data-Science" type="checkbox" id="Data-Science">
+            Data-Science
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Tell us about yourself</legend>
+        <label for="dropdown">
+            Favorite Coding Language
+            <select id="dropdown">
+                <option value="HTML5">HTML5</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+        </label>
+
+        <label id="about-label" for="about">
+            Quick Introduction
+            <textarea id="about" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+    </fieldset>
+
+    <button id="submit" type="submit">Submit</button>
+
+</form>
+<!-- TODO: Update Work  -->
+</body>
+</html>

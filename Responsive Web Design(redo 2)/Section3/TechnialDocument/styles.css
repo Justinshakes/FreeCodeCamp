@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+header {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+}
+
+main header {
+    font-weight: bold;
+}
+
+main {
+
+    margin-left: 220px;
+}
+
+#navbar {
+    border-right: solid black 1px;
+    position: fixed;
+    height: 100%;
+}
+
+nav header {
+    padding: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 25px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #210d21;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid black;
+    width: 215px;
+}
+
+section:first-of-type {
+    padding-top: 15px;
+}
+
+section {
+    padding-left: 20px;
+    border-bottom: 1px solid grey;
+}
+
+section:not(:first-of-type) {
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 800px) {
+
+    section:first-of-type {
+        margin-top: 150px;
+    }
+    nav {
+        background-color: white;
+
+    }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    #navbar {
+        height: fit-content;
+    }
+
+    nav header {
+        margin-right: auto;
+        margin-left: auto;
+        width: 250px;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 115px;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0;
+    }
+
+}
