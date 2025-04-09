@@ -3,64 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<h1 id="title">Epic Form</h1>
-<p id="description">This is me describing what the form is about</p>
 <form id="survey-form">
-    <label id="name-label" for="name">Name:
-    <input placeholder="John Doe" id="name" type="text">
-    </label>
+    <h1 id="title">Epic Form</h1>
+    <p id="description">This is me describing what the form is about</p>
 
-    <label id="email-label" for="email">Email:
-    <input placeholder="JohnDoe@gmail.com" id="email" type="email">
-    </label>
+    <fieldset>
+        <label id="name-label" for="name">Name:
+            <input required placeholder="  John Doe" id="name" type="text">
+        </label>
 
-    <label id="age-label" for="age">Age:
-    <input placeholder="32" id="age" min="18" max="120" type="number">
-    </label>
+        <label id="email-label" for="email">Email:
+            <input required placeholder="  JohnDoe@gmail.com" id="email" type="email">
+        </label>
 
-    <label for="dropdown">
-    <select id="dropdown">
-        <option>option_1</option>
-        <option>option_2</option>
-    </select>
-    </label>
+        <label id="number-label" for="number">Age:
+            <input required placeholder="  32" id="number" min="18" max="120" type="number">
+        </label>
+
+        <label class="label_check_radio" for="morning">
+            <input value="morning" class="inline" type="radio" id="morning" name="morning_night">
+            Morning Person
+        </label>
+
+        <label class="label_check_radio" for="night">
+            <input value="night" class="inline" type="radio" id="night" name="morning_night">
+            Night Person
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+
+        <label for="dropdown">Select One From The Following
+            <select id="dropdown">
+                <option>&nbsp;&nbsp;(Select One)</option>
+                <option>&nbsp;&nbsp;option_1</option>
+                <option>&nbsp;&nbsp;option_2</option>
+            </select>
+        </label>
 
 
-    
+        <label class="label_check_radio">
+            <input  class="inline" value="java" type="checkbox" name="learning_questions">
+            Java
+        </label>
 
-    <label for="morning">Morning Person?
-    <input type="radio" id="morning" name="morning_night">
-    </label>
+        <label class="label_check_radio">
+            <input class="inline" value="python" type="checkbox" name="learning_questions">
+            Python
+        </label>
 
-    <label for="night">Night Person
-    <input type="radio" id="night" name="morning_night">
-    </label>
+        <label class="label_check_radio">
+            <input class="inline" value="javascript" type="checkbox" name="learning_questions">
+            JavaScript
+        </label>
 
-
-    <label>
-        <input value="java" type="checkbox" name="learning_questions">
-        Java
-    </label>
-
-    <label>
-    <input value="python" type="checkbox" name="learning_questions">
-        Python
-    </label>
-
-    <label>
-        <input value="javascript" type="checkbox" name="learning_questions">
-        JavaScript
-    </label>
+    </fieldset>
 
     <label for="textarea"></label>Comments:
     <textarea rows="6" cols="40" id="textarea"></textarea>
 
     <label for="submit"></label>
-    <button id="submit" type="submit">fdsafsda</button>
-
+    <button id="submit" type="submit">Submit</button>
 
 
 </form>
