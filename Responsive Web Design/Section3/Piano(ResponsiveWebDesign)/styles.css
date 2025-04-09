@@ -1,9 +1,9 @@
-*, ::before, ::after {
-    box-sizing: inherit;
-}
-
 html {
     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 #piano {
@@ -54,18 +54,21 @@ html {
     #piano {
         width: 358px;
     }
+
     .keys {
         width: 318px;
     }
+
     .logo {
         width: 150px;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1199px){
+@media (max-width: 1199px) and (min-width: 769px) {
     #piano {
         width: 675px;
     }
+
     .keys {
         width: 633px;
     }

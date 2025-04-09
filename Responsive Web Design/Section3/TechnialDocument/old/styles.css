@@ -1,108 +1,89 @@
-html,
-body {
-    min-width: 290px;
-    color: #4d4e53;
-    background-color: whitesmoke;
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.5;
+* {
+    box-sizing: border-box;
+    margin: 0 5px 5px 0;
 }
 
-#navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    border-right: solid;
-    border-color: grey;
+
+html {
+    font-family: sans-serif;
+    color: darkslategray;
+    scroll-behavior: smooth;
 }
 
-header {
-    color: black;
-    margin: 10px;
-    text-align: center;
-    font-size: 1.8em;
-}
-
-#main-doc header {
-    text-align: left;
-    margin: 0;
-}
-
-#navbar ul {
-    height: 88%;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#navbar li {
-    color: #4d4e53;
-    border-top: 1px solid;
-    list-style: none;
-    position: relative;
+nav a {
+    display: block;
+    margin-top: 10px;
+    border-top: #1f1f1f 1px solid;
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+    padding: 20px 10px 10px 20px;
     width: 100%;
 }
 
-#navbar a {
-    display: block;
-    padding: 10px 30px;
-    color: darkslategray;
-    text-decoration: none;
+nav {
+    width: 30%;
+    position: fixed;
+    border-right: grey 3px solid;
+    height: 100vh;
 }
 
-#main-doc {
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
+nav header {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 
-section article {
-    color: #4d4e53;
-    margin: 15px;
-    font-size: 0.95em;
+main {
+    padding-top: 10px;
+    width: 60%;
+    margin-left: 32%;
 }
 
-section li {
-    margin: 15px 0 0 20px;
+section > header, section > p {
+    margin-bottom: 10px;
 }
 
-code {
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    background-color: #f7f7f7;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+section > header {
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-@media only screen and (max-width: 815px) {
-    /* For mobile phones: */
-    #navbar ul {
-        border: 1px solid;
-        height: 207px;
-        padding-bottom: 5px;
-    }
+section {
+    border-bottom: 3px grey solid;
+}
 
-    #navbar {
-        background-color: whitesmoke;
-        position: absolute;
-        top: 0;
-        padding: 0 0 10px 0;
-        margin: 0;
+.tip {
+    font-size: .8em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        position: unset;
+        height: 100px;
+        border: 0;
+        border-bottom: solid grey 3px;
         width: 100%;
-        max-height: 280px;
-        border: none;
-        z-index: 1;
     }
 
-    #main-doc {
-        position: relative;
-        margin-left: 0;
-        margin-top: 270px;
+    nav a {
+        display: flex;
+        font-size: 13px;
+        border: 0;
+        width: 15%;
+        align-items: center;
+        padding: 2px;
+    }
+
+    nav > header {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 100%;
+        margin: 10px auto;
+        padding: 20px;
     }
 }
-
-

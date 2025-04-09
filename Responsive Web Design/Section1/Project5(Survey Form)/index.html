@@ -2,55 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1 id="title">Food Survey</h1>
-<p id="description">This survey is all about your favorite types of food.</p>
+<h1 id="title">Epic Form</h1>
+<p id="description">This is me describing what the form is about</p>
 <form id="survey-form">
-    <fieldset>
-    <label id="name-label"> Name:
-        <input type="text" id="name" required placeholder="Your Name">
-    </label>
-    <label id="email-label"> Email:
-        <input type="email" id="email" required title="Please enter a valid email address" placeholder="Your Email">
-    </label>
-    <label id="number-label">How much are you a foodie:
-        <input type="number" id="number" required min="1" max="10" placeholder="Rate your food preference (1 - 10)">
+    <label id="name-label" for="name">Name:
+    <input placeholder="John Doe" id="name" type="text">
     </label>
 
-    <label for="dropdown">Drop down:
-        <select id="dropdown">
-            <option value="pizza">Pizza</option>
-            <option value="sushi">Sushi</option>
-            <option value="tacos">Tacos</option>
-        </select>
+    <label id="email-label" for="email">Email:
+    <input placeholder="JohnDoe@gmail.com" id="email" type="email">
     </label>
-    </fieldset>
-    <fieldset>
-        <h4>Sweet Or Savory</h4>
-    <label><input type="radio" value="food_pref" name="food_pref" class="inline"/> Sweet</label>
-    <label><input type="radio" value="food_pref" name="food_pref" class="inline"/> Savory</label>
-    </fieldset>
 
-    <fieldset>
-        <h4>Please Select The Following That You Like</h4>
-    <label for="Sushi"><input class="inline" type="checkbox" id="Sushi" value="Sushi"> Sushi</label>
-    <label for="Tacos"><input class="inline" type="checkbox" id="Tacos" value="Tacos"> Tacos</label>
-    <label for="Pizza"> <input class="inline" type="checkbox" id="Pizza" value="Pizza"> Pizza </label>
-    </fieldset>
-    <fieldset>
-    <label for="comments">Comments:</label>
-    <br>
-    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Comments"></textarea>
-    <br>
-    </fieldset>
-    <button type="submit" id="submit">Submit</button>
+    <label id="age-label" for="age">Age:
+    <input placeholder="32" id="age" min="18" max="120" type="number">
+    </label>
+
+    <label for="dropdown">
+    <select id="dropdown">
+        <option>option1</option>
+        <option>option2</option>
+    </select>
+    </label>
+
+
+    
+
+    <label for="morning">Morning Person?
+    <input type="radio" id="morning" name="morning_night">
+    </label>
+
+    <label for="night">Night Person
+    <input type="radio" id="night" name="morning_night">
+    </label>
+
+
+    <label>
+        <input value="java" type="checkbox" name="learning_questions">
+        Java
+    </label>
+
+    <label>
+    <input value="python" type="checkbox" name="learning_questions">
+        Python
+    </label>
+
+    <label>
+        <input value="javascript" type="checkbox" name="learning_questions">
+        JavaScript
+    </label>
+
+    <label for="textarea"></label>Comments:
+    <textarea rows="6" cols="40" id="textarea"></textarea>
+
+    <label for="submit"></label>
+    <button id="submit" type="submit">fdsafsda</button>
+
+
 
 </form>
 </body>
-</html>
-
-
-<!--Can't do stuff today WIll do stuff later tho. I need to learn html/css and javascript then I will get internship YEs-->

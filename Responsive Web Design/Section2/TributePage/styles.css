@@ -1,73 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 3em;
+    text-align: center;
+}
+
 body {
-    background-color: #484851;
-    color: #d0d0d5;
-    font-family: Verdana, sans-serif;
-    max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    background-color: #6c6982;
 }
 
-#title_div {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
+/*Img hero section*/
+/*background-color: #6c6982;*/
 #img-div {
-    background-color: #18181b;
-    padding: 20px 10px 10px 10px;
-    border: solid 2px grey;
-    max-width: 800px;
-    width: 100%;
-    margin: auto;
-}
-
-#img-caption{
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: auto;
+    width: 95%;
+    background-color: #7d7a99;
+    padding: 20px;
+    border-radius: 50px;
     max-width: 600px;
-}
-
-#tribute-link {
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.time-line {
-    margin: 35px 0;
-}
-
-.time-line h3 {
-    text-align: center;
-    font-size: 1.4rem;
-    margin: 50px 0;
-}
-
-.time-line li {
-    margin-bottom: 35px;
-}
-
-.time-line ul {
-    display: block;
     margin: 0 auto 50px auto;
-    width: 80%;
 }
 
-.bold {
-    font-weight: 800;
+#image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    border: 5px solid #3c3951;
+    border-radius: 50px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/*Img hero section end*/
+
+#time-line-div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#time-line-div li {
+    margin-top: 30px;
+}
+
+#tribute-info {
+    background-color: #9996b0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#link {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
 }
 
 a:hover {
-    color: grey;
+    color: #373444;
 }
 
-a:active {
-    color: lightcoral;
+.small-text {
+    font-size: .80em;
 }
 
-footer {
+.quote {
     text-align: center;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    font-style: italic;
 }
 
+.next-line {
+    margin-top: 10px;
+    display: block;
+}

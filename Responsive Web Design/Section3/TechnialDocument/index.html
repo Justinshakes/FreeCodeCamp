@@ -1,392 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldier 76 Guide</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <nav id="navbar">
-    <header>Java Documentation</header>
-    <ul>
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li>
-            <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
-        </li>
-        <li>
-            <a class="nav-link" href="#Java_and_JavaScript">Java and JavaScript</a>
-        </li>
-        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
-        <li>
-            <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
-        </li>
-        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-        <li>
-            <a class="nav-link" href="#Global_variables">Global variables</a>
-        </li>
-        <li><a class="nav-link" href="#Constants">Constants</a></li>
-        <li><a class="nav-link" href="#Data_types">Data types</a></li>
-        <li>
-            <a class="nav-link" href="#if...else_statement">if...else statement</a>
-        </li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li>
-            <a class="nav-link" href="#Function_declarations">Function declarations</a>
-        </li>
-        <li><a class="nav-link" href="#Reference">Reference</a></li>
-    </ul>
+    <header>Soldier 76 Wiki Guide</header>
+    <div class="nav-list">
+        <a class="nav-link" href="#Overview">Overview</a>
+        <a class="nav-link" href="#Passive">Passive</a>
+        <a class="nav-link" href="#Heavy_Pulse_Rifle">Heavy Pulse Rifle</a>
+        <a class="nav-link" href="#Helix_Rockets">Helix Rockets</a>
+        <a class="nav-link" href="#Sprint">Sprint</a>
+        <a class="nav-link" href="#Biotic_Field">Biotic Field</a>
+        <a class="nav-link" href="#Tactical_Visor">Tactical Visor</a>
+        <a class="nav-link" href="#Play_Style">Play Style</a>
+    </div>
 </nav>
 <main id="main-doc">
-    <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-        <article>
-            <p>
-                Java is a cross-platform, object-oriented programming language.
-                It is a robust and versatile language. Inside a host environment,
-                Java can be connected to objects and libraries to provide programmatic control over them.
-            </p>
-
-            <p>
-                Java contains a standard library of classes, such as ArrayList,
-                Date, and Math, and a core set of language elements such as
-                operators, control structures, and statements. Core Java can
-                be extended for a variety of purposes by using additional classes and libraries.
-            </p>
-        </article>
+    <section id="Overview" class="main-section">
+        <header>Overview</header>
+        <p>Soldier: 76 is a versatile damage hero with a focus on mobility, sustained fire, and self-healing. His
+            abilities allow him to deal damage at medium range while maintaining good positioning with his sprint and
+            healing capabilities.</p>
+        <code></code>
+        <ul>
+            <li>Role: Damage</li>
+            <li>Health: 200</li>
+        </ul>
     </section>
-    <section class="main-section" id="What_you_should_already_know">
-        <header>What you should already know</header>
-        <article>
-            <p>This guide assumes you have the following basic background:</p>
 
-            <ul>
-                <li>
-                    A general understanding of programming concepts.
-                </li>
-                <li>Good working knowledge of software development principles.</li>
-                <li>
-                    Some programming experience. If you are new to programming, consider
-                    taking an introductory Java course.
-                </li>
-            </ul>
-        </article>
+    <section id="Passive" class="main-section">
+        <header>Passive</header>
+        <p>As a damage hero, Soldier: 76 benefits from the passive ability that all damage characters share: increased
+            movement speed after eliminations. This helps him chase down enemies and reposition quickly.</p>
+        <code></code>
+        <ul>
+            <li>Passive: Damage role speed boost (after eliminations)</li>
+        </ul>
     </section>
-    <section class="main-section" id="Java_and_JavaScript">
-        <header>Java and JavaScript</header>
-        <article>
-            <p>
-                Java and JavaScript are similar in some ways but fundamentally
-                different in others. The Java language is statically typed and has strong type checking,
-                while JavaScript is dynamically typed.
-            </p>
 
-            <p>
-                Although JavaScript shares some syntax and naming conventions with Java, it has distinct
-                features such as a prototype-based object model and functions without explicit types.
-            </p>
-            <p>
-                Java enforces strict rules regarding variable declarations, access modifiers, and interfaces,
-                while JavaScript offers more flexibility.
-            </p>
-        </article>
+    <section id="Heavy_Pulse_Rifle" class="main-section">
+        <header>Heavy Pulse Rifle</header>
+        <p>The Heavy Pulse Rifle is Soldier: 76's primary weapon. It fires in fully automatic mode, with decent accuracy
+            and damage over mid to long-range. It's perfect for consistent damage output while staying mobile.</p>
+        <code></code>
+        <ul>
+            <li>Damage per shot: 18</li>
+            <li>Rate of fire: 9 rounds per second</li>
+            <li>Ammo: 30 rounds</li>
+            <li>Reload time: 1.5 seconds</li>
+        </ul>
     </section>
-    <section class="main-section" id="Hello_world">
-        <header>Hello world</header>
-        <article>
-            To get started with writing Java, create a class and write your first "Hello world" Java code:
-            <code
-            >public class HelloWorld {
-                public static void main(String[] args) {
-                System.out.println("Hello, World!");
-                }
-                }</code>
 
-            Compile and run the code to see "Hello, World!" displayed in your console!
-        </article>
+    <section id="Helix_Rockets" class="main-section">
+        <header>Helix Rockets</header>
+        <p>Helix Rockets are a secondary fire option for Soldier: 76, launching a small burst of rockets that explode on
+            impact. These rockets deal significant burst damage and are great for finishing off enemies or applying
+            pressure in close combat.</p>
+        <code></code>
+        <ul>
+            <li>Damage: 120 (direct hit)</li>
+            <li>Cool down: 6 seconds</li>
+            <li>Area-of-effect damage: 80</li>
+        </ul>
     </section>
-    <section class="main-section" id="Variables">
-        <header>Variables</header>
-        <p>
-            In Java, you use variables as symbolic names for values in your application.
-            Variable names, known as identifiers, must adhere to certain rules.
-        </p>
-        <p>
-            A Java identifier must start with a letter, underscore (_), or
-            dollar sign ($), followed by letters, digits (0-9), or underscores.
-            Java is case-sensitive, so "A" and "a" are different identifiers.
-        </p>
-        <p>
-            You can also use Unicode characters in identifiers, making Java suitable for internationalization.
-        </p>
+
+    <section id="Sprint" class="main-section">
+        <header>Sprint</header>
+        <p>Sprint allows Soldier: 76 to run at an increased speed, making him highly mobile. He can use Sprint to
+            quickly get into position, escape danger, or chase down fleeing enemies. This ability has no cooldown,
+            allowing him to use it freely.</p>
+        <code></code>
+        <ul>
+            <li>Increases movement speed by 50%</li>
+        </ul>
     </section>
-    <section class="main-section" id="Declaring_variables">
-        <header>Declaring variables</header>
-        <article>
-            You can declare a variable in Java using the following syntax:
-            <p>
-                With the keyword "int" (for integers): <code>int x = 42;</code> This
-                syntax can be used to declare both local and instance variables.
-            </p>
-            <p>
-                By simply assigning it a value: <code>x = 42;</code> This always declares a variable and assigns
-                a global variable in the context of a class.
-            </p>
-            <p>
-                Using other data types and keywords as needed. For example, you can declare a double variable like this:
-                <code>double y = 13.0;</code> This syntax can be used to declare block scope local variables.
-            </p>
-        </article>
+
+    <section id="Biotic_Field" class="main-section">
+        <header>Biotic Field</header>
+        <p>Soldier: 76 deploys a Biotic Field, which creates an area that heals him and any allies within its range.
+            This ability provides crucial sustainability, making Soldier: 76 a durable threat in prolonged fights.</p>
+        <code></code>
+        <ul>
+            <li>Healing: 40 health per second</li>
+            <li>Duration: 5 seconds</li>
+            <li>Cooldown: 15 seconds</li>
+        </ul>
     </section>
-    <section class="main-section" id="Variable_scope">
-        <header>Variable scope</header>
-        <article>
-            <p>
-                In Java, when you declare a variable outside of any method, it is called an instance variable,
-                available to any other code in the current class. When you declare a variable within a method,
-                it is called a local variable, available only within that method.
-            </p>
 
-            <p>
-                Java enforces block statement scope, which means a variable declared within a block is local to that
-                block.
-                For example, the following code will work as expected:
-            </p>
-            <code>if (true) { int x = 5; } System.out.println(x); // This will result in a compilation error</code>
-            <p>
-                This behavior ensures that variables are more closely scoped and helps prevent unintentional variable
-                reuse.
-            </p>
-
-            <code
-            >if (true) { int y = 5; } System.out.println(y); // This will result in a compilation error</code
-            >
-        </article>
+    <section id="Tactical_Visor" class="main-section">
+        <header>Tactical Visor</header>
+        <p>Tactical Visor is Soldier: 76's ultimate ability. When activated, it automatically locks on to enemies in his
+            line of sight, allowing him to fire his weapon without missing. This is particularly powerful in team fights
+            where precision and quick eliminations are key.</p>
+        <code></code>
+        <ul>
+            <li>Duration: 6 seconds</li>
+            <li>Automatically aims at enemies in line of sight</li>
+            <li>Can still reload and use abilities while active</li>
+        </ul>
     </section>
-    <section class="main-section" id="Global_variables">
-        <header>Global variables</header>
-        <article>
-            <p>
-                In Java, global variables are typically declared as static fields within a class.
-                They are accessible to all instances of the class and are associated with the class itself.
-            </p>
 
-            <p>
-                Consequently, you can access global variables from other classes by using the class name followed by the
-                field name.
-                For example, if a static variable called "phoneNumber" is declared in a class named "Utility," you can
-                refer to it as "Utility.phoneNumber."
-            </p>
-        </article>
-    </section>
-    <section class="main-section" id="Constants">
-        <header>Constants</header>
-        <article>
-            <p>
-                In Java, you can create a read-only, named constant using the "final" keyword.
-                The syntax for defining a constant identifier is the same as for a variable identifier.
-            </p>
-
-            <code>final double PI = 3.14;</code>
-            <p>
-                A constant cannot change its value after initialization and cannot be re-declared while the program is
-                running.
-            </p>
-
-            <p>
-                Constants in Java follow the same scope rules as block scope variables.
-                If you omit the "final" keyword, the identifier is assumed to represent a variable rather than a
-                constant.
-            </p>
-
-            <p>
-                You cannot declare a constant with the same name as a function or variable in the same scope.
-            </p>
-
-            <code
-            >// This will result in an error:
-                // public void f() {};
-                // final int f = 5;</code
-            >
-            However, object attributes are not protected, so you can modify them:
-            <code
-            >final MyObject MY_OBJECT = new MyObject();
-                MY_OBJECT.setValue("otherValue");</code
-            >
-        </article>
-    </section>
-    <section class="main-section" id="Data_types">
-        <header>Data types</header>
-        <article>
-            <p>Java defines several data types:</p>
-            <ul>
-                <li>
-                    <p>Primitive data types:</p>
-                    <ul>
-                        <li>boolean: true or false</li>
-                        <li>byte: 8-bit integer</li>
-                        <li>short: 16-bit integer</li>
-                        <li>int: 32-bit integer</li>
-                        <li>long: 64-bit integer</li>
-                        <li>float: 32-bit floating-point</li>
-                        <li>double: 64-bit floating-point</li>
-                        <li>char: 16-bit Unicode character</li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Reference types:</p>
-                    <ul>
-                        <li>Objects: Instances of classes that can store data and have methods to operate on that data.</li>
-                        <li>Arrays: Ordered collections of elements of the same data type, accessed by an index.</li>
-                        <li>Interfaces: Contracts that define a set of methods that a class must implement.</li>
-                        <li>Enums: Special data types that consist of a fixed set of constants.</li>
-                        <li>Custom reference types: Classes created by developers to define custom data structures and behaviors.</li>
-                    </ul>
-                </li>
-            </ul>
-            These data types enable you to perform various operations and store different types of data in your Java applications. Objects and classes are fundamental elements in the language, allowing you to define complex data structures and create reusable code.
-        </article>
-    </section>
-    <section class="main-section" id="if...else_statement">
-        <header>if...else statement</header>
-        <article>
-            Use the "if" statement in Java to execute a block of code if a specified condition is true.
-            You can also use the optional "else" clause to execute a different block of code if the condition is false.
-            The basic syntax of an "if" statement is as follows:
-
-            <code>if (condition) {
-                // statement_1;
-                } else {
-                // statement_2;
-                }</code>
-
-            The "condition" can be any expression that evaluates to a boolean value (true or false).
-            If the condition evaluates to true, "statement_1" is executed; otherwise, "statement_2" is executed.
-            Both "statement_1" and "statement_2" can be single statements or compound statements enclosed in curly
-            braces.
-            <p>
-                You can also use "else if" clauses to test multiple conditions in sequence:
-            </p>
-            <code
-            >if (condition_1) {
-                // statement_1;
-                } else if (condition_2) {
-                // statement_2;
-                } else if (condition_n) {
-                // statement_n;
-                } else {
-                // statement_last;
-                }</code
-            >
-            In this case, only the first condition that evaluates to true will execute its corresponding block of code.
-        </article>
-    </section>
-    <section class="main-section" id="while_statement">
-        <header>while statement</header>
-        <article>
-            A "while" statement in Java executes a block of code as long as a specified condition is true.
-            The basic syntax of a "while" statement is as follows:
-
-            <code>while (condition) {
-                // statement;
-                }</code>
-            If the "condition" evaluates to true, the "statement" within the loop is executed.
-            After each execution of the "statement," the condition is re-evaluated.
-            If the condition is still true, the loop continues; otherwise, the loop terminates, and control passes to
-            the statement following the "while" block.
-
-            <p>
-                You can use block statements enclosed in curly braces to group multiple statements within the loop.
-            </p>
-
-            Example:
-
-            <p>
-                The following "while" loop iterates as long as "n" is less than three:
-            </p>
-
-            <code>int n = 0; int x = 0;
-                while (n < 3) {
-                n++;
-                x += n;
-                }</code>
-            <p>
-                After each iteration, the loop increments "n" and adds that value to "x."
-                Therefore, "x" and "n" take on the following values:
-            </p>
-
-            <ul>
-                <li>After the first pass: "n" = 1 and "x" = 1</li>
-                <li>After the second pass: "n" = 2 and "x" = 3</li>
-                <li>After the third pass: "n" = 3 and "x" = 6</li>
-            </ul>
-            <p>
-                After completing the third pass, the condition "n < 3" is no longer true, so the loop terminates.
-            </p>
-        </article>
-    </section>
-    <section class="main-section" id="Function_declarations">
-        <header>Function declarations</header>
-        <article>
-            In Java, a function definition (also known as a method declaration) consists of the following parts:
-
-            <ul>
-                <li>The return type of the function, indicating what type of value the function will return.</li>
-                <li>
-                    The name of the function, used to identify and call the function.
-                </li>
-                <li>
-                    A list of parameters (arguments) enclosed in parentheses, specifying the data types and names of the
-                    arguments the function expects.
-                </li>
-                <li>
-                    The Java statements that define the function's behavior, enclosed in curly braces, { }.
-                </li>
-            </ul>
-            <p>
-                For example, the following code defines a simple function (method) named "square" in a class:
-            </p>
-
-            <code>public int square(int number) {
-                return number * number;
-                }</code>
-            <p>
-                In this example:
-            </p>
-
-            <ul>
-                <li>The return type is "int," indicating that the function will return an integer value.</li>
-                <li>
-                    The name of the function is "square."
-                </li>
-                <li>
-                    The function takes one parameter named "number" of type "int."
-                </li>
-                <li>
-                    The function consists of one statement that calculates the square of the input number and returns it
-                    as an integer.
-                </li>
-            </ul>
-            <p>
-                In Java, primitive parameters (such as "int") are passed to functions by value, meaning that a copy of
-                the value is passed to the function.
-                If the function modifies the parameter's value, it does not affect the original value outside of the
-                function.
-            </p>
-        </article>
-    </section>
-    <section class="main-section" id="Reference">
-        <header>Reference</header>
-        <article>
-            <ul>
-                <li>
-                    All the documentation in this page is taken from
-                    <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-                            target="_blank"
-                    >MDN</a
-                    >
-                </li>
-            </ul>
-        </article>
+    <section id="Play_Style" class="main-section">
+        <header>Play Style</header>
+        <p>Soldier: 76 is best played as a versatile DPS who can deal consistent damage, heal himself and teammates, and
+            reposition quickly. He's effective in both mid-range engagements and flanking strategies. Use Sprint to
+            control your positioning, Biotic Field for sustain, and Helix Rockets for burst damage. Tactical Visor
+            should be activated when you have a clear line of sight on multiple enemies for maximum value.</p>
+        <code></code>
+        <ul>
+            <li>Mid-range damage dealer</li>
+            <li>Focus on positioning and sustain</li>
+            <li>Great for beginners and experienced players alike</li>
+        </ul>
     </section>
 </main>
 </body>

@@ -1,64 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
 body {
-    width: 100%;
-    height: 100vh;
+    background-image: url("https://i.imgur.com/5csF0Tw.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
-    background-color: #1b1b32;
-    color: #f5f6f7;
-    font-family: Tahoma, serif;
-    font-size: 16px;
+    min-height: 80vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    color: white;
+    background-color: #0a0a23;
 }
 
-h1, p {
-    margin: 1em auto;
+#title, #description {
     text-align: center;
+    background-color: rgba(33, 38, 58, 0.75);;
+}
+
+#description {
+    font-size: 1.5em;
 }
 
 form {
-    width: 60vw;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+    background-color: rgba(33, 38, 58, 0.99);
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
 }
 
 label {
+    margin: 10px auto;
     display: block;
-    margin: 10px 0;
 }
+
 
 input {
-    margin-top: 6px;
+    margin: 10px auto;
 }
 
-input,
-textarea,
-select {
-    width: 100%;
-    min-height: 2em;
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-}
-
-.inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-}
-
-fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
-}
-
-button {
+textarea {
     display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 300px;
-    color: white;
 }

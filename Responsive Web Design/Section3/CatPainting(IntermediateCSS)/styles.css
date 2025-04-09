@@ -1,8 +1,3 @@
-/*
-    How (and why) to use borders to make a CSS triangle (plus a scss mixin)
-    https://www.youtube.com/watch?v=fFJH6dguuqo&t=473s
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -78,22 +73,22 @@ body {
 }
 
 .cat-left-eye {
-    border-radius: 60%;
-    transform: rotate(25deg);
     position: absolute;
     top: 54px;
     left: 39px;
+    border-radius: 60%;
+    transform: rotate(25deg);
     width: 30px;
     height: 40px;
     background-color: #000;
 }
 
 .cat-right-eye {
-    border-radius: 60%;
-    transform: rotate(-25deg);
     position: absolute;
     top: 54px;
     left: 134px;
+    border-radius: 60%;
+    transform: rotate(-25deg);
     width: 30px;
     height: 40px;
     background-color: #000;
@@ -103,43 +98,43 @@ body {
     position: absolute;
     top: 8px;
     left: 2px;
-    border-radius: 60%;
-    transform: rotate(10deg);
     width: 10px;
     height: 20px;
+    transform: rotate(10deg);
     background-color: #fff;
+    border-radius: 60%;
 }
 
 .cat-right-inner-eye {
     position: absolute;
     top: 8px;
     left: 18px;
-    border-radius: 60%;
     transform: rotate(-5deg);
     width: 10px;
     height: 20px;
     background-color: #fff;
+    border-radius: 60%;
 }
 
 .cat-nose {
     position: absolute;
     top: 108px;
     left: 85px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(180deg);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #442c2c;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    transform: rotate(180deg);
 }
 
 .cat-mouth div {
     width: 30px;
     height: 50px;
-    border: 2px solid;
-    border-color: black transparent transparent transparent;
+    border: 2px solid #000;
     border-radius: 190%/190px 150px 0 0;
+    border-color: black transparent transparent transparent;
 }
 
 .cat-mouth-line-left {
@@ -209,6 +204,3 @@ body {
     left: 109px;
     transform: rotate(3deg);
 }
-
-
-
