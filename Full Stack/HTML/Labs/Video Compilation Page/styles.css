@@ -1,0 +1,8 @@
+iframe {
+    width: 100%;
+    max-width: 600px;  /* optional: controls how big it can get */
+    height: auto;
+    aspect-ratio: 16 / 9;  /* keeps the correct shape */
+    display: block;
+    margin: 0 auto;  /* centers it horizontally */
+}
