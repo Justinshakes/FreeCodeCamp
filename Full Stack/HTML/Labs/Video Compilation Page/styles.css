@@ -6,3 +6,7 @@ iframe {
     display: block;
     margin: 0 auto;  /* centers it horizontally */
 }
+
+body {
+    text-align: center;
+}
