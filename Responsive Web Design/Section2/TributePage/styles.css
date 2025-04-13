@@ -39,6 +39,8 @@ img {
     width: 65%;
 }
 
+
+
 figure {
     background-color: #745BD9;
     width: 100%;
@@ -62,7 +64,6 @@ figcaption {
 }
 
 footer {
-    margin-top: 50px;
-
+    margin: 50px 0 25px 0;
 }
 

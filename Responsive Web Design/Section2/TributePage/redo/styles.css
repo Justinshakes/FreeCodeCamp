@@ -1,0 +1,84 @@
+/* Use `box-sizing: border-box` for all elements including pseudo-elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Explicitly include pseudo-elements for consistent sizing */
+}
+
+/* Apply reset and improved structure to the body */
+body {
+    text-align: center;
+    margin: 0; /* Ensure no default margin */
+    background-color: #7776BC; /* Keep original background */
+    color: #e0ffff; /* Keep original color */
+    font-family: sans-serif; /* Retain font family */
+    font-size: 1.1rem; /* Maintain relative font size */
+    /* Removed `width: 100%` as it's unnecessary for the body element */
+}
+
+/* Simplified repeated margin property */
+header {
+    margin: 25px 0; /* Simplified redundant shorthand property */
+}
+
+#title {
+    margin: 25px 0; /* Simplified redundant shorthand property */
+}
+
+/* Removed commented-out code and unnecessary width */
+/* You can style `main` later if needed */
+main {
+    /* No changes yet as it's empty */
+}
+
+/* Improved responsiveness for images */
+img {
+    max-width: 100%; /* Ensures image fits its container */
+    display: block;  /* Prevents inline-block whitespace around images */
+    margin: 0 auto;  /* Centers image horizontally */
+    border: 5px solid #e0ffff; /* Retain styling */
+    border-radius: 20px; /* Keep original rounded corners */
+    height: auto;      /* Retains aspect ratio */
+    width: auto; /* Changed from `55%` to `auto` for better responsiveness */
+}
+
+/* Reset lists for consistency across browsers */
+ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0;        /* Reset default margin */
+    padding: 0;       /* Reset default padding */
+}
+
+/* Make `figure` more responsive */
+figure {
+    background-color: #745BD9; /* Retain background */
+    margin: 0 auto;           /* Centers element */
+    max-width: 75%;           /* Limited width for better responsiveness */
+    padding: 20px;            /* Retain padding */
+}
+
+/* Reset `figcaption` margin to avoid browser inconsistencies */
+figcaption {
+    margin: 0; /* Reset default margin */
+    padding-top: 25px; /* Retained original spacing */
+}
+
+/* Simplified repeated margin property */
+#tribute-info {
+    padding: 25px 0; /* Simplified redundant shorthand */
+}
+
+#timeline {
+    font-size: 1rem; /* Keep font size as is */
+}
+
+/* Specific spacing for `li` items */
+#timeline li {
+    padding-top: 15px; /* Retain spacing between list items */
+}
+
+/* Adjust footer for better spacing */
+footer {
+    margin: 50px 0 25px; /* Simplified redundant shorthand */
+    /* Keep spacing, but consider additional responsiveness in small viewports */
+}
