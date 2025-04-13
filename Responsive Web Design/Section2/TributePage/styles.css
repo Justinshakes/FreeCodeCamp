@@ -17,6 +17,14 @@ body {
 
 }
 
+header {
+    margin: 25px 0 25px 0;
+}
+
+#title {
+    margin: 25px 0 25px 0;
+}
+
 main {
     width: 100%;
 }
@@ -38,5 +46,22 @@ figure {
 
 figcaption {
     padding-top: 25px;
+}
+
+#tribute-info {
+    padding: 25px 0 25px 0;
+}
+
+#timeline {
+    font-size: .90rem;
+}
+
+#timeline li {
+    padding-top: 15px;
+}
+
+footer {
+    margin-top: 50px;
+
 }
 
